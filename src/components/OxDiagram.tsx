@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { OX_CUTS, OxCut } from "../data/oxCuts";
+import { OX_CUTS, OxCut } from "../oxCutsData";
 import { Check, HelpCircle, Sparkles, ZoomIn, ZoomOut, RotateCcw } from "lucide-react";
 
 interface OxDiagramProps {

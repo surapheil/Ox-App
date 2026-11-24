@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { OX_CUTS, OxCut } from "../data/oxCuts";
+import { OX_CUTS, OxCut } from "../oxCutsData";
 import { X, UtensilsCrossed, Sparkles, BookOpen, Search } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 

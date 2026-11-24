@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { OxCut } from "../data/oxCuts";
+import { OxCut } from "../oxCutsData";
 import {
   googleSignIn,
   appendWinnerToGoogleSheet,

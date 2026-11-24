@@ -1,5 +1,5 @@
 import React from "react";
-import { OxCut } from "../data/oxCuts";
+import { OxCut } from "../oxCutsData";
 import { RotateCcw, HeartHandshake, Eye, BookOpen, UtensilsCrossed } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 

@@ -1,5 +1,5 @@
 import React from "react";
-import { OX_CUTS, BUTCHER_RANKS } from "../data/oxCuts";
+import { OX_CUTS, BUTCHER_RANKS } from "../oxCutsData";
 import { Trophy, Sheet, RotateCcw, ArrowLeft, CheckCircle2, Award } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 

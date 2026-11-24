@@ -1,5 +1,5 @@
 import React from "react";
-import { BUTCHER_RANKS, OxCut, OX_CUTS } from "../data/oxCuts";
+import { BUTCHER_RANKS, OxCut, OX_CUTS } from "../oxCutsData";
 import { Trophy, Beer, Flame, Award } from "lucide-react";
 
 interface BeerRackProps {

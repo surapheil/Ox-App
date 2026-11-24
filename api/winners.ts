@@ -34,8 +34,12 @@ function readConfig() {
   }
   return {
     ownerEmail: "surafellamesgin@gmail.com",
-    sheetWebhookUrl: process.env.GOOGLE_SHEETS_WEBHOOK_URL || "",
-    spreadsheetId: process.env.GOOGLE_SPREADSHEET_ID || "",
+    sheetWebhookUrl:
+      process.env.GOOGLE_SHEETS_WEBHOOK_URL ||
+      "https://script.google.com/macros/s/AKfycbzZeRNmtBNTBFleAF51r7wL_sNXgaR6tVDGYWpR7pCSPqO-yczwhatQEsXB6ko1zKxG/exec",
+    spreadsheetId:
+      process.env.GOOGLE_SPREADSHEET_ID ||
+      "17XZUgkKW5YqXtVRT4zIOk9tSruhXYBc-1V76yXSYpB0",
   };
 }
 

@@ -1,5 +1,5 @@
 import React, { useMemo } from "react";
-import { OxCut, OX_CUTS } from "../data/oxCuts";
+import { OxCut, OX_CUTS } from "../oxCutsData";
 import { X } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 

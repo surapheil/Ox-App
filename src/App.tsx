@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { OX_CUTS, OxCut, BUTCHER_RANKS } from "./data/oxCuts";
+import { OX_CUTS, OxCut, BUTCHER_RANKS } from "./oxCutsData";
 import { OxDiagram } from "./components/OxDiagram";
 import { QuestionModal } from "./components/QuestionModal";
 import { BeerAwardModal } from "./components/BeerAwardModal";

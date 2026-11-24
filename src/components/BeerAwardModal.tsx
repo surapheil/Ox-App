@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import confetti from "canvas-confetti";
-import { OxCut, BEER_BRANDS } from "../data/oxCuts";
+import { OxCut, BEER_BRANDS } from "../oxCutsData";
 import { Sparkles, Trophy, UtensilsCrossed, ArrowRight, LogOut } from "lucide-react";
 import { motion, AnimatePresence } from "motion/react";
 
