@@ -229,11 +229,15 @@ app.get("/api/download-zip", (req: Request, res: Response) => {
 import os, zipfile
 root = ${JSON.stringify(__dirname)}
 out_zip = ${JSON.stringify(zipPath)}
-exclude_dirs = {"node_modules", "dist", "data", ".git", ".aistudio", ".vercel"}
+exclude_root_dirs = {"node_modules", "dist", "data", ".git", ".aistudio", ".vercel"}
 exclude_files = {"server.js", ".env", ".env.local"}
 with zipfile.ZipFile(out_zip, "w", zipfile.ZIP_DEFLATED) as zf:
     for dirpath, dirnames, filenames in os.walk(root):
-        dirnames[:] = [d for d in dirnames if d not in exclude_dirs]
+        rel_dir = os.path.relpath(dirpath, root)
+        if rel_dir == ".":
+            dirnames[:] = [d for d in dirnames if d not in exclude_root_dirs]
+        else:
+            dirnames[:] = [d for d in dirnames if d != "node_modules" and d != ".git"]
         for f in filenames:
             if f in exclude_files or f.endswith(".zip"):
                 continue
