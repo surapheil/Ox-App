@@ -236,7 +236,7 @@ export default function App() {
           {/* Quick Restart */}
           <button
             onClick={handleRestartGame}
-            className="p-1.5 sm:px-2.5 sm:py-1 text-xs font-bold text-stone-950 bg-gradient-to-r from-amber-400 to-yellow-500 rounded-xl hover:from-amber-300 hover:to-yellow-400 transition whitespace-nowrap shrink-0 flex items-center gap-1 shadow-[0_0_12px_rgba(212,175,55,0.3)] active:scale-95"
+            className="p-1.5 sm:px-2.5 sm:py-1 text-xs font-bold text-stone-950 bg-linear-to-r from-amber-400 to-yellow-500 rounded-xl hover:from-amber-300 hover:to-yellow-400 transition whitespace-nowrap shrink-0 flex items-center gap-1 shadow-[0_0_12px_rgba(212,175,55,0.3)] active:scale-95"
             title="አዲስ ዙር ጀምር"
           >
             <RotateCcw className="w-3.5 h-3.5" />
@@ -263,7 +263,7 @@ export default function App() {
             className="group relative cursor-pointer flex items-center gap-1.5 pl-1 pr-2 py-0.5 sm:py-1 rounded-full bg-gradient-to-r from-stone-900 via-stone-950 to-amber-950/80 border border-amber-500/50 shadow-[0_0_15px_rgba(212,175,55,0.25)] hover:border-amber-400 hover:shadow-[0_0_20px_rgba(212,175,55,0.45)] transition-all duration-300"
             title="ቀዝቃዛው ሐበሻ ቢራ · የሚያረካ!"
           >
-            <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full p-0.5 bg-gradient-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow shrink-0 group-hover:scale-105 transition-transform">
+            <div className="relative w-7 h-7 sm:w-8 sm:h-8 rounded-full p-0.5 bg-linear-to-tr from-amber-400 via-yellow-200 to-amber-600 shadow shrink-0 group-hover:scale-105 transition-transform">
               <img
                 src="/assets/aistudio/Top_Logo_36f2e7cb.png"
                 alt="Habesha Beer Official Emblem"
@@ -272,7 +272,7 @@ export default function App() {
               <span className="absolute -inset-0.5 rounded-full border border-amber-300/40 animate-spin [animation-duration:12s] pointer-events-none" />
             </div>
 
-            <div className="flex flex-col text-left leading-tight hidden xs:flex">
+            <div className="flex flex-col text-left leading-tight xs:flex">
               <span className="text-[10px] font-black tracking-wider uppercase text-habesha-gold">
                 ሐበሻ
               </span>
@@ -357,7 +357,7 @@ export default function App() {
                         ) : !revealedCutIds.includes(activeCut.id) ? (
                           <button
                             onClick={() => setQuestionCut(activeCut)}
-                            className="py-1.5 px-4 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-500 text-stone-950 font-black text-xs transition active:scale-95"
+                            className="py-1.5 px-4 rounded-xl bg-linear-to-r from-amber-400 to-yellow-500 text-stone-950 font-black text-xs transition active:scale-95"
                           >
                             ገምት
                           </button>
@@ -417,7 +417,7 @@ export default function App() {
                   />
                   <button
                     onClick={() => setMobileTab("game")}
-                    className="w-full py-2.5 rounded-xl bg-gradient-to-r from-amber-400 to-yellow-500 text-stone-950 font-bold text-xs shadow active:scale-95 transition"
+                    className="w-full py-2.5 rounded-xl bg-linear-to-r from-amber-400 to-yellow-500 text-stone-950 font-bold text-xs shadow active:scale-95 transition"
                   >
                     ወደ ጨዋታው ተመለስ (Back to Game)
                   </button>
@@ -437,7 +437,7 @@ export default function App() {
                     </span>
                   </div>
 
-                  <div className="flex-1 space-y-2 overflow-y-auto pr-1 max-h-[460px]">
+                  <div className="flex-1 space-y-2 overflow-y-auto pr-1 max-h-115">
                     {OX_CUTS.map((cut) => {
                       const isFound = correctCutIds.includes(cut.id);
                       return (
@@ -495,7 +495,7 @@ export default function App() {
             <span className="text-base">🍺</span>
             <span className="text-[10px]">ሐበሻ ሳጥን</span>
             {beerCount > 0 && (
-              <span className="absolute -top-1 right-1 w-4 h-4 rounded-full bg-gradient-to-tr from-amber-400 to-yellow-500 text-stone-950 text-[9px] font-black flex items-center justify-center shadow">
+              <span className="absolute -top-1 right-1 w-4 h-4 rounded-full bg-linear-to-tr from-amber-400 to-yellow-500 text-stone-950 text-[9px] font-black flex items-center justify-center shadow">
                 {beerCount}
               </span>
             )}
