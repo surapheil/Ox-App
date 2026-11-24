@@ -1,0 +1,8 @@
+{
+  "name": "የበሬ ሥጋ ብልቶች - Ethiopian Ox Cuts Quiz Game",
+  "description": "An interactive Amharic guessing game for traditional Ethiopian ox meat cuts. Identify the parts on the ox, reveal the names, win cold beers, and test your culinary mastery!",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
